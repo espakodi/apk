@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es" data-palette="teal">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EspaKodi · APK oficial</title>
+  <meta name="description" content="Descarga oficial de la APK de EspaKodi: enlace directo y código numérico para la app Downloader. Historial de cambios y sumas de verificación de cada versión.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <span class="brand" aria-label="EspaKodi">
+        <img class="brand-logo" src="favicon.svg" alt="" width="40" height="40">
+        <span class="brand-text">
+          <strong>EspaKodi</strong>
+          <small>APK oficial con addons para Kodi en español</small>
+        </span>
+      </span>
+
+      <div class="header-tools">
+        <div class="tool-wrap">
+          <button id="palette-btn" class="icon-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="palette-pop" aria-label="Cambiar paleta de color" title="Paleta de color">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9.5"/>
+              <circle cx="12" cy="7" r="1.1" fill="currentColor"/>
+              <circle cx="16.5" cy="10" r="1.1" fill="currentColor"/>
+              <circle cx="15" cy="15.5" r="1.1" fill="currentColor"/>
+              <circle cx="8" cy="14" r="1.1" fill="currentColor"/>
+            </svg>
+          </button>
+          <div id="palette-pop" class="popover" role="menu" hidden></div>
+        </div>
+
+        <button id="theme-btn" class="icon-btn" type="button" aria-label="Cambiar tema" title="Tema claro u oscuro">
+          <svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+
+        <div class="tool-wrap">
+          <button id="a11y-btn" class="icon-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="a11y-panel" aria-label="Opciones de accesibilidad" title="Accesibilidad">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9.5"/>
+              <circle cx="12" cy="7" r="1.2" fill="currentColor"/>
+              <path d="M6.5 9.5h11M12 9.7V14M12 14l-2.4 4M12 14l2.4 4"/>
+            </svg>
+          </button>
+          <div id="a11y-panel" class="popover popover-wide" role="menu" hidden>
+            <p class="popover-title">Accesibilidad</p>
+            <button class="chip-toggle" type="button" data-a11y="a11y-contrast" aria-pressed="false">Alto contraste</button>
+            <button class="chip-toggle" type="button" data-a11y="a11y-bold" aria-pressed="false">Negrita</button>
+            <button class="chip-toggle" type="button" data-a11y="a11y-large" aria-pressed="false">Texto más grande</button>
+            <button class="chip-toggle" type="button" data-a11y="a11y-upper" aria-pressed="false">Mayúsculas</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Descarga oficial</p>
+      <h1>Instala EspaKodi en tu dispositivo</h1>
+      <p class="hero-sub">Dos formas de descargar cada APK: <strong>enlace directo</strong> o <strong>código numérico</strong> para la app Downloader de Fire TV y Android TV.</p>
+      <div id="latest-badge" class="latest-badge" hidden></div>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <section id="downloads" class="section" aria-labelledby="downloads-title">
+      <h2 id="downloads-title">Última versión</h2>
+      <div id="downloads-grid" class="cards">
+        <p class="loading">Cargando última versión…</p>
+      </div>
+    </section>
+
+    <section class="section how-to" aria-labelledby="howto-title">
+      <h2 id="howto-title">Cómo instalar (abreviado)</h2>
+      <div class="howto-grid">
+        <article class="howto-card">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="7" y="2" width="10" height="20" rx="2.5"/><line x1="11" y1="18" x2="13" y2="18"/>
+            </svg>
+            Móvil o tablet Android
+          </h3>
+          <ol>
+            <li>Pulsa <strong>Descargar</strong> en la versión recomendada (ARM64).</li>
+            <li>Abre el archivo y permite la instalación de <em>orígenes desconocidos</em> si te lo pide.</li>
+            <li>Instala y abre EspaKodi.</li>
+          </ol>
+        </article>
+        <article class="howto-card">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="14" rx="2.5"/><polyline points="8 21 12 17 16 21"/>
+            </svg>
+            Fire TV / Android TV (Downloader)
+          </h3>
+          <ol>
+            <li>Instala la app <strong>Downloader</strong> y ábrela.</li>
+            <li>En el campo de dirección, escribe el <strong>código numérico</strong> del APK (o pega la URL de descarga).</li>
+            <li>Descarga e instala. Sin teclear URLs largas.</li>
+          </ol>
+          <p class="howto-note">Con Downloader <strong>basta</strong>. Descarga e instala solo, sin explorador de archivos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section guide" aria-labelledby="guide-title">
+      <h2 id="guide-title">Guía por dispositivo</h2>
+      <p class="guide-intro">EspaKodi es una APK de <strong>Android</strong>. Elige la de <strong>64 bits (ARM64)</strong> en móviles, tablets y TV box potentes; usa la de <strong>32 bits (armeabi-v7a)</strong> en Fire TV Stick, Chromecast con Google TV y equipos económicos. Si una no instala, prueba la otra.</p>
+
+      <details class="guide-item" open>
+        <summary>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Formas de instalar el APK (¿hace falta explorador?)</span>
+        </summary>
+        <div class="guide-body">
+          <p>Con la app <strong>Downloader basta</strong>. Descarga el APK y lanza la instalación directamente, <strong>sin explorador de archivos</strong>.</p>
+          <p>Si prefieres pasar el APK desde el móvil o el PC, entonces <strong>sí</strong> necesitas un <strong>explorador de archivos</strong> (File Commander, X-plore, FX File Explorer…) para abrirlo:</p>
+          <ul>
+            <li><strong>Descargar con Downloader:</strong> escribe el código numérico o pega la URL → descarga → <em>Instalar</em>. Listo, sin explorador.</li>
+            <li><strong>Enviar por WiFi (Send Files to TV o LocalSend):</strong> instala la app en la TV y en el móvil/PC, envía el APK y luego ábrelo con el <strong>explorador de archivos</strong> para instalar.</li>
+            <li><strong>Por USB:</strong> copia el APK a un pendrive, conéctalo a la TV y ábrelo con el <strong>explorador de archivos</strong> → <em>Instalar</em>.</li>
+          </ul>
+          <p>La primera vez, el explorador (o Downloader) te pedirá permiso para <strong>instalar apps desconocidas</strong>. Acéptalo.</p>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2.5"/><polyline points="8 21 12 17 16 21"/></svg>
+          <span>Amazon Fire TV Stick / Fire TV Cube</span>
+        </summary>
+        <div class="guide-body">
+          <p>Usa la versión de <strong>32 bits (armeabi-v7a)</strong>. Aunque el hardware sea de 64 bits, Fire OS funciona en 32 bits.</p>
+          <ol>
+            <li>Activa las opciones de desarrollador: <strong>Ajustes → Mi Fire TV → Información</strong>, marca el nombre de tu dispositivo y pulsa <strong>OK 7 veces</strong>.</li>
+            <li>Vuelve a <strong>Mi Fire TV → Opciones de desarrollador</strong> y activa <strong>Instalar apps desconocidas</strong> (o <em>Orígenes desconocidos</em>) para <strong>Downloader</strong>.</li>
+            <li>Instala y abre la app <strong>Downloader</strong> (desde la tienda de Amazon).</li>
+            <li>En el campo de dirección escribe el <strong>código numérico</strong> del APK de 32 bits (o pega su URL) y pulsa <strong>Go</strong>.</li>
+            <li>Cuando descargue, pulsa <strong>Instalar</strong> y luego <strong>Hecho</strong> (puedes borrar el archivo).</li>
+          </ol>
+          <p class="guide-warn"><strong>Aviso:</strong> los Fire TV más nuevos con <strong>Vega OS</strong> (Fire TV Stick 4K Select de 2025 y Fire TV Stick HD de 2026 en adelante) <strong>no permiten instalar APK</strong> ni usar Downloader; solo instalan apps de la tienda de Amazon.</p>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2.5"/><polyline points="8 21 12 17 16 21"/></svg>
+          <span>Chromecast con Google TV (4K y HD)</span>
+        </summary>
+        <div class="guide-body">
+          <p>Usa la versión de <strong>32 bits (armeabi-v7a)</strong>.</p>
+          <ol>
+            <li>Activa el <strong>Modo desarrollador</strong>: <strong>Ajustes → Sistema → Información</strong> y pulsa 7 veces en <strong>Compilación de Android TV</strong>.</li>
+            <li>Ve a <strong>Ajustes → Apps → Seguridad y restricciones → Fuentes desconocidas</strong> y activa <strong>Downloader</strong>.</li>
+            <li>Instala <strong>Downloader</strong>, escribe el <strong>código numérico</strong> del APK (o su URL) e instálalo. Alternativa: la app <em>Send files to TV</em> para enviarlo desde el móvil.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2.5"/><polyline points="8 21 12 17 16 21"/></svg>
+          <span>Android TV / Google TV box (NVIDIA Shield, onn, Nokia, genéricas)</span>
+        </summary>
+        <div class="guide-body">
+          <ol>
+            <li>Si la opción aparece en gris, activa primero el <strong>Modo desarrollador</strong>: <strong>Ajustes → … → Información</strong> y pulsa 7 veces en la <strong>compilación</strong>.</li>
+            <li>Ve a <strong>Ajustes → Preferencias del dispositivo (o Apps) → Seguridad y restricciones → Fuentes desconocidas</strong> y activa la app que usarás (Downloader o tu explorador de archivos).</li>
+            <li>Instala con <strong>Downloader</strong> (código numérico o URL), o copia el APK por USB / red.</li>
+          </ol>
+          <p><strong>NVIDIA Shield</strong> y box potentes: usa <strong>64 bits (ARM64)</strong>. Box económicas: si la de 64 no instala, usa la de <strong>32 bits</strong>.</p>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+          <span>Xiaomi (Mi TV Stick, Mi Box y móviles)</span>
+        </summary>
+        <div class="guide-body">
+          <p><strong>Mi TV Stick / Mi Box</strong> (Android TV): permite <strong>fuentes desconocidas</strong> en Seguridad y usa <strong>Downloader</strong>. En el Mi TV Stick suele ir mejor la versión de <strong>32 bits</strong>.</p>
+          <p><strong>Móvil Xiaomi (MIUI / HyperOS)</strong>: descarga el APK de <strong>64 bits</strong>. Al abrirlo, HyperOS te pedirá permiso para instalar desde esa app (tu navegador o <em>Archivos</em>); pulsa <strong>Ajustes → Permitir de esta fuente</strong> y vuelve a instalar.</p>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+          <span>Móvil o tablet Android (cualquier marca)</span>
+        </summary>
+        <div class="guide-body">
+          <ol>
+            <li>Pulsa <strong>Descargar</strong> en la versión de <strong>64 bits (ARM64)</strong>. Si tu equipo es muy antiguo y no instala, usa la de <strong>32 bits</strong>.</li>
+            <li>Permite <strong>Instalar apps desconocidas</strong> para tu navegador (Android te lo ofrece al abrir el archivo).</li>
+            <li>Abre el APK descargado e instala.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="13" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span>Windows / PC</span>
+        </summary>
+        <div class="guide-body">
+          <p>Esta APK es para Android. En un PC tienes dos opciones:</p>
+          <ul>
+            <li>Instalar un <strong>emulador de Android</strong> y, dentro, instalar el APK como en un móvil.</li>
+            <li>Usar <strong>Kodi de escritorio</strong> para Windows (no es esta APK; se descarga desde la web oficial de Kodi).</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+
+    <section id="history" class="section" aria-labelledby="history-title">
+      <h2 id="history-title">Historial de versiones</h2>
+      <div id="history-list" class="history">
+        <p class="loading">Cargando historial…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="disclaimer">EspaKodi no está afiliado a Kodi ni a la Fundación XBMC.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
