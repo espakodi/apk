@@ -31,6 +31,7 @@ jobs:
 
       # gh api: código !=0 ante 4xx/5xx (set -e aborta), --paginate une todas las
       # páginas. Validamos que sea un array antes de escribir el fichero definitivo.
+      # Pages publica desde main/docs, así que el JSON va dentro de docs/.
       - name: Generar releases.json (con validación)
         run: |
           set -euo pipefail
@@ -40,7 +41,7 @@ jobs:
             echo "::error::Respuesta no válida de la API; conservo el releases.json actual"
             exit 1
           fi
-          jq '.' "$tmp" > releases.json
+          jq '.' "$tmp" > docs/releases.json
 
       # Commit solo si cambió, para no ensuciar el historial cada día.
       - name: Commit y push si hay cambios
@@ -49,7 +50,7 @@ jobs:
           set -euo pipefail
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add releases.json
+          git add docs/releases.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "Sin cambios en releases.json."
