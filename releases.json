@@ -34,7 +34,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2026-06-20T08:43:22Z",
-    "updated_at": "2026-06-20T10:20:38Z",
+    "updated_at": "2026-06-20T10:20:54Z",
     "published_at": "2026-06-20T10:16:20Z",
     "assets": [
       {
@@ -112,7 +112,7 @@
     ],
     "tarball_url": "https://api.github.com/repos/espakodi/apk/tarball/v0.0.3",
     "zipball_url": "https://api.github.com/repos/espakodi/apk/zipball/v0.0.3",
-    "body": "EspaKodi v0.0.3\r\nNovedades de esta versión:\r\n- Nuevo apartado para instalar addons opcionales (no incluidos por defecto para no aumentar de la app).\r\n- Autocompletar en el teclado: al escribir en el buscador aparecen sugerencias automáticamente. Configurado para que sean de Google en español.\r\n- Auto-actualización de addons: antes los addons del ecosistema (EspaDaily, EspaTV, StreamNinja, TopZilla, LoioLink…) no se actualizaban automáticamente."
+    "body": "EspaKodi v0.0.3\r\nNovedades de esta versión:\r\n- Nuevo apartado para instalar addons opcionales (no incluidos por defecto para no aumentar de la app).\r\n- Autocompletar en el teclado: al escribir en el buscador aparecen sugerencias automáticamente. Configurado para que sean de Google en español.\r\n- Auto-actualización de addons: antes los addons del ecosistema (EspaDaily, EspaTV, StreamNinja, TopZilla, LoioLink…) no se actualizaban automáticamente.\r\n\r\narm64 SHA-256: 5D7EA9764B3CC5986542515E7A9EF6E2F3975997350E9B437057AF2D04070B02\r\narm32 SHA-256: 700B6AD755869A5F6DB8A85134D7ED542E56A4C635E4C78676B64EC47385BBE0"
   },
   {
     "url": "https://api.github.com/repos/espakodi/apk/releases/340971872",
