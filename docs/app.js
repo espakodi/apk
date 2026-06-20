@@ -6,7 +6,7 @@ const CONFIG = {
   cacheTtlMs: 15 * 60 * 1000,
 };
 
-const API_URL = `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/releases`;
+const API_URL = './releases.json';
 const CACHE_KEY = `releases:${CONFIG.owner}/${CONFIG.repo}`;
 
 const PALETTES = [
