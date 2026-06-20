@@ -1,0 +1,66 @@
+name: Actualizar releases.json
+
+on:
+  # Cualquier mutación de releases regenera el JSON
+  release:
+    types: [published, edited, released, unpublished, deleted]
+  workflow_dispatch:          # botón manual en la pestaña Actions
+  schedule:
+    - cron: '0 6 * * *'       # refresco diario (06:00 UTC)
+
+permissions:
+  contents: write   # commit/push de releases.json
+  pages: write      # forzar el rebuild de Pages (POST /pages/builds)
+
+concurrency:
+  group: releases-json
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # gh CLI lo usa para autenticarse
+    steps:
+      # En el evento `release` el ref es el tag (detached HEAD) y el push fallaría;
+      # forzamos la rama por defecto.
+      - name: Checkout de la rama por defecto
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      # gh api: código !=0 ante 4xx/5xx (set -e aborta), --paginate une todas las
+      # páginas. Validamos que sea un array antes de escribir el fichero definitivo.
+      - name: Generar releases.json (con validación)
+        run: |
+          set -euo pipefail
+          tmp="$(mktemp)"
+          gh api --paginate "repos/${GITHUB_REPOSITORY}/releases" > "$tmp"
+          if ! jq -e 'type == "array"' "$tmp" >/dev/null; then
+            echo "::error::Respuesta no válida de la API; conservo el releases.json actual"
+            exit 1
+          fi
+          jq '.' "$tmp" > releases.json
+
+      # Commit solo si cambió, para no ensuciar el historial cada día.
+      - name: Commit y push si hay cambios
+        id: commit
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add releases.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Sin cambios en releases.json."
+          else
+            git commit -m "chore: actualizar releases.json"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # El push con GITHUB_TOKEN no refresca Pages; lo pedimos explícitamente.
+      # Solo si hubo cambios (evita rebuilds inútiles en los cron diarios sin novedades).
+      - name: Forzar rebuild de Pages (Deploy from a branch)
+        if: steps.commit.outputs.changed == 'true'
+        run: gh api -X POST "repos/${GITHUB_REPOSITORY}/pages/builds"
