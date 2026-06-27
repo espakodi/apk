@@ -34,7 +34,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2026-06-27T16:49:32Z",
-    "updated_at": "2026-06-27T17:05:50Z",
+    "updated_at": "2026-06-27T17:30:13Z",
     "published_at": "2026-06-27T17:05:50Z",
     "assets": [
       {
@@ -104,7 +104,7 @@
         "state": "uploaded",
         "size": 92747604,
         "digest": "sha256:d98cd93d292a86851319b5a0878e65f1080311345711c26a3943e188fc9c534d",
-        "download_count": 0,
+        "download_count": 1,
         "created_at": "2026-06-27T17:04:12Z",
         "updated_at": "2026-06-27T17:04:16Z",
         "browser_download_url": "https://github.com/espakodi/apk/releases/download/v0.0.5/EspaKodi-0.0.5-armeabi-v7a.apk"
@@ -112,7 +112,7 @@
     ],
     "tarball_url": "https://api.github.com/repos/espakodi/apk/tarball/v0.0.5",
     "zipball_url": "https://api.github.com/repos/espakodi/apk/zipball/v0.0.5",
-    "body": ""
+    "body": "EspaKodi 0.0.5 \"Venom\" novedades:\r\n\r\n• Nuevo tema oscuro Espatuary.\r\n• Cada addon de vídeo (EspaDaily, AtresDaily, EspaTV, StreamNinja, TopZilla) tiene su propio icono en el escritorio de Android: ábrelos sin entrar en EspaKodi.\r\n• Nueva guía interactiva \"Cómo instalar un addon\", paso a paso.\r\n• EspaKodi Instaladores mejorado, con botón para descargar la última versión de EspaKodi.\r\n• Addons y dependencias actualizados a sus últimas versiones.\r\n• Cruceta (D-pad) en pantalla para moverte por la interfaz cuando cuesta llegar a algún botón con el dedo.\r\n• Opción para que el ahorro de batería no cierre EspaKodi cuando la dejas en segundo plano.\r\n• El favorito de Flow FavManager abre directamente el Editor Avanzado.\r\n• Corrección de errores y otras mejoras técnicas o menos importantes.\r\n\r\n"
   },
   {
     "url": "https://api.github.com/repos/espakodi/apk/releases/342376729",
