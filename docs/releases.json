@@ -3,7 +3,7 @@
     "url": "https://api.github.com/repos/espakodi/apk/releases/342376729",
     "assets_url": "https://api.github.com/repos/espakodi/apk/releases/342376729/assets",
     "upload_url": "https://uploads.github.com/repos/espakodi/apk/releases/342376729/assets{?name,label}",
-    "html_url": "https://github.com/espakodi/apk/releases/tag/V0.0.4",
+    "html_url": "https://github.com/espakodi/apk/releases/tag/v0.0.4",
     "id": 342376729,
     "author": {
       "login": "espakodi",
@@ -27,14 +27,14 @@
       "site_admin": false
     },
     "node_id": "RE_kwDOS8FkbM4UaEEZ",
-    "tag_name": "V0.0.4",
+    "tag_name": "v0.0.4",
     "target_commitish": "main",
     "name": "",
     "draft": false,
     "immutable": false,
     "prerelease": false,
-    "created_at": "2026-06-20T17:59:36Z",
-    "updated_at": "2026-06-20T18:04:02Z",
+    "created_at": "2026-06-27T08:27:58Z",
+    "updated_at": "2026-06-27T16:49:24Z",
     "published_at": "2026-06-20T18:04:02Z",
     "assets": [
       {
@@ -68,10 +68,10 @@
         "state": "uploaded",
         "size": 86815729,
         "digest": "sha256:0e391c3779a78d73de25f22444687a4c5cba563aeb397b0411c97604625a617f",
-        "download_count": 21,
+        "download_count": 22,
         "created_at": "2026-06-20T18:00:53Z",
         "updated_at": "2026-06-20T18:00:58Z",
-        "browser_download_url": "https://github.com/espakodi/apk/releases/download/V0.0.4/EspaKodi-0.0.4-arm64-v8a.apk"
+        "browser_download_url": "https://github.com/espakodi/apk/releases/download/v0.0.4/EspaKodi-0.0.4-arm64-v8a.apk"
       },
       {
         "url": "https://api.github.com/repos/espakodi/apk/releases/assets/453134519",
@@ -107,11 +107,11 @@
         "download_count": 19,
         "created_at": "2026-06-20T18:00:58Z",
         "updated_at": "2026-06-20T18:01:02Z",
-        "browser_download_url": "https://github.com/espakodi/apk/releases/download/V0.0.4/EspaKodi-0.0.4-armeabi-v7a.apk"
+        "browser_download_url": "https://github.com/espakodi/apk/releases/download/v0.0.4/EspaKodi-0.0.4-armeabi-v7a.apk"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/espakodi/apk/tarball/V0.0.4",
-    "zipball_url": "https://api.github.com/repos/espakodi/apk/zipball/V0.0.4",
+    "tarball_url": "https://api.github.com/repos/espakodi/apk/tarball/v0.0.4",
+    "zipball_url": "https://api.github.com/repos/espakodi/apk/zipball/v0.0.4",
     "body": "EspaKodi v0.0.4 cambios:\r\nAl actualizar el APK, los addons que se quedaban en versión vieja (StreamNinja, FlowFavManager) ahora sí se actualizan a la última."
   },
   {
