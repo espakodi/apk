@@ -1,21 +1,30 @@
 Repositorio oficial para descargar los APK de el proyecto.
 
-V0.0.4:
-- arm64 SHA-256: 0E391C3779A78D73DE25F22444687A4C5CBA563AEB397B0411C97604625A617F
-- arm32 SHA-256: 2ECC8E1313E5620FA4DBFD49917B8144EAD42A30A6696ADC8B4F9B369715C8A9
+V0.0.5 "Venom":
+- arm64 SHA-256: c7c2bec01813d2c9b119f9871514a65aee52796da25eb0f43749e0cff149b8fb
+- arm32 SHA-256: d98cd93d292a86851319b5a0878e65f1080311345711c26a3943e188fc9c534d
 
 # Changelog - EspaKodi
 
-## v0.0.5
+## v0.0.5 "Venom" novedades:
+
+• Nuevo tema oscuro Espatuary.
+• Cada addon de vídeo (EspaDaily, AtresDaily, EspaTV, StreamNinja, TopZilla) tiene su propio icono en el escritorio de Android: ábrelos sin entrar en EspaKodi.
+• Nueva guía interactiva "Cómo instalar un addon", paso a paso.
+• EspaKodi Instaladores mejorado, con botón para descargar la última versión de EspaKodi.
+• Addons y dependencias actualizados a sus últimas versiones.
+• Cruceta (D-pad) en pantalla para moverte por la interfaz cuando cuesta llegar a algún botón con el dedo.
+• Opción para que el ahorro de batería no cierre EspaKodi cuando la dejas en segundo plano.
+• El favorito de Flow FavManager abre directamente el Editor Avanzado.
+• Corrección de errores y otras mejoras técnicas o menos importantes.
 
 
----
 
 ## v0.0.4
 EspaKodi v0.0.4 cambios:
 Al actualizar el APK, los addons que se quedaban en versión vieja (StreamNinja, FlowFavManager) ahora sí se actualizan a la última.
 
----
+
 
 ## v0.0.3
 EspaKodi v0.0.3
@@ -25,7 +34,7 @@ Novedades de esta versión:
 * Autocompletar en el teclado: al escribir en el buscador aparecen sugerencias automáticamente. Configurado para que sean de Google en español.
 * Auto-actualización de addons: antes los addons del ecosistema (EspaDaily, EspaTV, StreamNinja, TopZilla, LoioLink…) no se actualizaban automáticamente.
 
----
+
 
 ## v0.0.2
 EspaKodi APK v0.0.2:
