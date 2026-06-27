@@ -6,24 +6,22 @@ V0.0.5 "Venom":
 
 # Changelog - EspaKodi
 
-## v0.0.5 "Venom" novedades:
+## v0.0.5 "Venom"
 
-• Nuevo tema oscuro Espatuary.
-• Cada addon de vídeo (EspaDaily, AtresDaily, EspaTV, StreamNinja, TopZilla) tiene su propio icono en el escritorio de Android: ábrelos sin entrar en EspaKodi.
-• Nueva guía interactiva "Cómo instalar un addon", paso a paso.
-• EspaKodi Instaladores mejorado, con botón para descargar la última versión de EspaKodi.
-• Addons y dependencias actualizados a sus últimas versiones.
-• Cruceta (D-pad) en pantalla para moverte por la interfaz cuando cuesta llegar a algún botón con el dedo.
-• Opción para que el ahorro de batería no cierre EspaKodi cuando la dejas en segundo plano.
-• El favorito de Flow FavManager abre directamente el Editor Avanzado.
-• Corrección de errores y otras mejoras técnicas o menos importantes.
-
+* Nuevo tema oscuro Espatuary.
+* Cada addon de vídeo (EspaDaily, AtresDaily, EspaTV, StreamNinja, TopZilla) tiene su propio icono en el escritorio de Android: ábrelos sin entrar en EspaKodi.
+* Nueva guía interactiva "Cómo instalar un addon", paso a paso.
+* EspaKodi Instaladores mejorado, con botón para descargar la última versión de EspaKodi.
+* Addons y dependencias actualizados a sus últimas versiones.
+* Cruceta (D-pad) en pantalla para moverte por la interfaz cuando cuesta llegar a algún botón con el dedo.
+* Opción para que el ahorro de batería no cierre EspaKodi cuando la dejas en segundo plano.
+* El favorito de Flow FavManager abre directamente el Editor Avanzado.
+* Corrección de errores y otras mejoras técnicas o menos importantes.
 
 
 ## v0.0.4
 EspaKodi v0.0.4 cambios:
 Al actualizar el APK, los addons que se quedaban en versión vieja (StreamNinja, FlowFavManager) ahora sí se actualizan a la última.
-
 
 
 ## v0.0.3
@@ -33,7 +31,6 @@ Novedades de esta versión:
 * Nuevo apartado para instalar addons opcionales (no incluidos por defecto para no aumentar de la app).
 * Autocompletar en el teclado: al escribir en el buscador aparecen sugerencias automáticamente. Configurado para que sean de Google en español.
 * Auto-actualización de addons: antes los addons del ecosistema (EspaDaily, EspaTV, StreamNinja, TopZilla, LoioLink…) no se actualizaban automáticamente.
-
 
 
 ## v0.0.2
