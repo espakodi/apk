@@ -34,7 +34,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2026-06-27T16:49:32Z",
-    "updated_at": "2026-06-27T17:30:13Z",
+    "updated_at": "2026-06-28T17:18:09Z",
     "published_at": "2026-06-27T17:05:50Z",
     "assets": [
       {
@@ -68,15 +68,15 @@
         "state": "uploaded",
         "size": 93144828,
         "digest": "sha256:c7c2bec01813d2c9b119f9871514a65aee52796da25eb0f43749e0cff149b8fb",
-        "download_count": 4,
+        "download_count": 6,
         "created_at": "2026-06-27T17:04:05Z",
         "updated_at": "2026-06-27T17:04:11Z",
         "browser_download_url": "https://github.com/espakodi/apk/releases/download/v0.0.5/EspaKodi-0.0.5-arm64-v8a.apk"
       },
       {
-        "url": "https://api.github.com/repos/espakodi/apk/releases/assets/459609094",
-        "id": 459609094,
-        "node_id": "RA_kwDOS8FkbM4bZRQG",
+        "url": "https://api.github.com/repos/espakodi/apk/releases/assets/460375684",
+        "id": 460375684,
+        "node_id": "RA_kwDOS8FkbM4bcMaE",
         "name": "EspaKodi-0.0.5-armeabi-v7a.apk",
         "label": null,
         "uploader": {
@@ -102,11 +102,11 @@
         },
         "content_type": "application/vnd.android.package-archive",
         "state": "uploaded",
-        "size": 92747604,
-        "digest": "sha256:d98cd93d292a86851319b5a0878e65f1080311345711c26a3943e188fc9c534d",
-        "download_count": 3,
-        "created_at": "2026-06-27T17:04:12Z",
-        "updated_at": "2026-06-27T17:04:16Z",
+        "size": 92780372,
+        "digest": "sha256:a4ce87fcf26134e8a0987ed5ab5389ccdb7a5d4a5acab5cfcfc7506ebdce925d",
+        "download_count": 0,
+        "created_at": "2026-06-28T17:18:03Z",
+        "updated_at": "2026-06-28T17:18:09Z",
         "browser_download_url": "https://github.com/espakodi/apk/releases/download/v0.0.5/EspaKodi-0.0.5-armeabi-v7a.apk"
       }
     ],
