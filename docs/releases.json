@@ -104,7 +104,7 @@
         "state": "uploaded",
         "size": 92780372,
         "digest": "sha256:a4ce87fcf26134e8a0987ed5ab5389ccdb7a5d4a5acab5cfcfc7506ebdce925d",
-        "download_count": 27,
+        "download_count": 29,
         "created_at": "2026-06-28T17:18:03Z",
         "updated_at": "2026-06-28T17:18:09Z",
         "browser_download_url": "https://github.com/espakodi/apk/releases/download/v0.0.5/EspaKodi-0.0.5-armeabi-v7a.apk"
