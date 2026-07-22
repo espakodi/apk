@@ -5,8 +5,23 @@ V0.0.5 "Venom":
 - arm32 SHA-256: d98cd93d292a86851319b5a0878e65f1080311345711c26a3943e188fc9c534d
 
 # Changelog - EspaKodi
+- Kodi oficial tiene un fallo al salir. El proceso no llega a cerrarse y al volver a entrar te encuentras la pantalla en negro. Aquí el botón de apagar fuerza el cierre y sale al instante.
+- Cruceta arreglada para que funcione en toda la interfaz.
+- Actualizados los addon EspaKodi Instaladores, Guía de como instalar un addon y añadido el addon "Continuar donde estabas" de EspaKodi Warp.
+- Otras mejoras menores, corrección de bugs y optimizaciones.
 
-## v0.0.5 "Venom"
+## v0.0.6 "Venom"
+* 
+* Cada addon de vídeo (EspaDaily, AtresDaily, EspaTV, StreamNinja, TopZilla) tiene su propio icono en el escritorio de Android: ábrelos sin entrar en EspaKodi.
+* Nueva guía interactiva "Cómo instalar un addon", paso a paso.
+* EspaKodi Instaladores mejorado, con botón para descargar la última versión de EspaKodi.
+* Addons y dependencias actualizados a sus últimas versiones.
+* Cruceta (D-pad) en pantalla para moverte por la interfaz cuando cuesta llegar a algún botón con el dedo.
+* Opción para que el ahorro de batería no cierre EspaKodi cuando la dejas en segundo plano.
+* El favorito de Flow FavManager abre directamente el Editor Avanzado.
+* Corrección de errores y otras mejoras técnicas o menos importantes.
+
+## v0.0.5
 
 * Nuevo tema oscuro Espatuary.
 * Cada addon de vídeo (EspaDaily, AtresDaily, EspaTV, StreamNinja, TopZilla) tiene su propio icono en el escritorio de Android: ábrelos sin entrar en EspaKodi.
