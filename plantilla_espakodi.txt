@@ -1,0 +1,194 @@
+# EspaKodi - configuración compartida
+#
+# QUÉ ES ESTO
+#   Nada más instalar EspaKodi, en el primer arranque, la app busca este archivo
+#   y ofrece aplicarlo si lo encuentra. Al aceptar se instalan los addons que
+#   traiga junto con los repositorios de los que salen, se añaden sus favoritos
+#   y se ponen sus ajustes de vídeo, aspecto y sonido, sin instalar nada a mano
+#   ni tener que averiguar de dónde se descarga cada addon.
+#   Lo busca también en los arranques siguientes mientras no se haya aplicado ni
+#   rechazado, y se puede aplicar en cualquier momento desde Ajustes de
+#   EspaKodi, en Compartir configuración. Mira en Descargas, en la raíz del
+#   almacenamiento, en una carpeta EspaKodi dentro de cualquiera de las dos y
+#   donde Telegram guarda los documentos que descargas, de modo que bajarlo del
+#   chat basta y no hay que moverlo de sitio.
+#   Lo escribe la propia app al exportar, desde esa misma opción, con lo que
+#   haya puesto en ese momento. Es texto, así que se retoca en cualquier editor.
+#
+# QUÉ HACER CON ESTE ARCHIVO
+#   Déjalo en la carpeta Descargas del dispositivo y abre EspaKodi, que te
+#   preguntará si quieres aplicarlo. También desde Ajustes de EspaKodi, en
+#   Compartir configuración.
+#   Vale igual en la raíz del almacenamiento, y en una carpeta llamada EspaKodi
+#   dentro de cualquiera de los dos. Si te llega por Telegram, con bajarlo
+#   desde el chat basta; EspaKodi mira también donde Telegram deja lo que
+#   descargas, así que no tienes que moverlo de sitio.
+#   El nombre tiene que ser espakodi.txt, o acabar en espakodi.txt con lo que
+#   quieras delante separado por un guion bajo, para que en un grupo se sepa de
+#   quién es cada uno.
+#       espakodi.txt                 <- vale
+#       minombre_espakodi.txt        <- vale, y se sabe de quién es
+#       la_de_maria_espakodi.txt     <- vale
+#       espakodi_minombre.txt        <- NO vale, el nombre va delante
+#       minombre-espakodi.txt        <- NO vale, tiene que ser guion bajo
+#   Si tienes varias guardadas, EspaKodi te ofrece la más reciente.
+#   Si no lo encuentra, casi siempre es que Android no le ha dado el permiso
+#   "Acceso a todos los archivos". Puedes dárselo desde los ajustes del
+#   aparato, o subir el archivo a internet y usar Compartir configuración,
+#   Importar desde una dirección de internet, que no necesita ningún permiso.
+#   Guárdalo en UTF-8 si le pones tildes, o saldrán mal. Y que no pase de
+#   256 KB; uno más grande no se lee a medias, se rechaza entero.
+#
+# QUÉ TE CAMBIA AL APLICARLO
+#   Solo añade. Instala los addons que te falten y te pone los favoritos que
+#   traiga, sin desinstalar nada ni tocar los favoritos que ya tuvieras, así
+#   que aplicar la configuración de otro no te quita lo tuyo.
+#   Lo único que te cambia algo tuyo son [video] y [ajustes], y solo en las
+#   líneas que traiga el archivo. Y [avisos], que sustituye el sitio del que
+#   recibes los avisos si ya tenías otro.
+#
+# CÓMO SE ESCRIBE (las líneas que empiezan por # o por ; no cuentan)
+#   [info]        nombre = Como quieras llamarla (60 letras como mucho)
+#   [repos]       https://…/repository.loquesea-1.0.0.zip
+#                 repository.loquesea = https://…/donde-sea.zip
+#                 Normalmente basta con pegar la dirección del zip, como en la
+#                 primera línea. EspaKodi necesita saber cómo se llama el
+#                 repositorio (ese repository.algo) para buscar dentro los
+#                 addons de abajo, y lo saca del nombre del zip quitándole la
+#                 versión. Por eso, si el zip se llama de otra forma
+#                 (mirepo.zip), hay que escribirlo delante con un igual, como
+#                 en la segunda línea.
+#   [addons]      plugin.video.loquesea
+#                 plugin.video.otro = https://…/plugin.video.otro-1.0.0.zip
+#                 Con el nombre del addon a secas (ese plugin.video.algo) se
+#                 busca en los repositorios de arriba y en los que ya tenga
+#                 instalados quien lo reciba; si no está en ninguno, ponle la
+#                 dirección de su zip como en la segunda línea. Lo que salga de
+#                 un repositorio lo actualiza Kodi solo a partir de ahí; lo que
+#                 salga de un zip suelto, no.
+#   [favoritos]   Nombre visible = plugin.video.loquesea
+#                 Nombre visible = plugin://plugin.video.loquesea/una_seccion
+#                 Poner un addon del que ya se tiene el favorito no cambia nada;
+#                 lo que añade algo es la segunda forma, que apunta a una
+#                 sección de dentro y es un acceso directo nuevo.
+#                 El nombre se corta a 60 letras, no puede llevar «=» ni
+#                 empezar por «#» o «;».
+#   [video]       cache = bajo | normal | alto | maximo
+#                 Cuánta memoria reserva Kodi para que el vídeo no se corte.
+#                 bajo es lo que trae Kodi de serie, alto es lo que suele
+#                 arreglar los cortes, y maximo solo donde sobre memoria; en un
+#                 dispositivo justo lo que consigue es que Kodi se cierre solo.
+#   [ajustes]     Cómo se ve y cómo suena EspaKodi. Cada línea es opcional; la
+#                 que no pongas deja ese ajuste como lo tenga cada uno.
+#                 paleta = espatuary | laroja | azul
+#                 fondo = si | no              (enseñar la foto de fondo)
+#                 opacidad = 100 | 90 | … | 10 (100 la foto entera, 10 casi
+#                                              transparente)
+#                 animaciones = completas | fundido
+#                 warp = si | no               (sin animaciones, va más rápido)
+#                 tactil = si | no             (cruceta en pantalla)
+#                 reanudar = si | no           (seguir donde lo dejaste)
+#                 navegar = pelota | tambor | no
+#                 arranque = daidai | wakawaka | superestrella | rotativo | no
+#                 La foto de fondo y los sonidos que hayas puesto TÚ no caben en
+#                 un .txt, así que no viajan; de los sonidos se comparte cuál de
+#                 los de EspaKodi tienes elegido.
+#   [avisos]      url = https://…/avisos.json
+#                 Deja ese sitio como el que le manda los avisos a EspaKodi.
+#                 Lo mirará una vez al día y sacará una notificación cuando
+#                 haya algo nuevo; el texto entero se queda en Ajustes, en la
+#                 fila Avisos. Ahí va un archivo de avisos, no otro
+#                 espakodi.txt. Tiene que ser https, y cómo se escribe está
+#                 aquí abajo.
+#
+#   Lo que EspaKodi no entienda se lo salta y te lo dice. No rompe nada.
+#   Los addons que trae EspaKodi de serie no se tocan, ni siquiera poniéndoles
+#   otra dirección; si desinstalaste alguno, se vuelve a poner desde EspaKodi
+#   Instaladores.
+#   Caben 20 repositorios, 60 addons y 40 favoritos; lo que pase de ahí se
+#   queda fuera y también te lo dice.
+#
+# SI QUIERES MANDAR TÚ LOS AVISOS
+#   Con esto le llega un mensaje tuyo a todo el que tenga puesta tu
+#   configuración: que ha salido una versión nueva, que un addon se ha caído,
+#   que hay que cambiar una dirección. Le sale en el aparato, sin que tengas
+#   que ir contándoselo uno a uno.
+#   Sube un archivo como el de aquí abajo a cualquier sitio con https (GitHub
+#   Pages vale) y pon su dirección en [avisos]. EspaKodi no instala nada de lo
+#   que ponga; enseña el texto y, si hay "web" o "paquete", ofrece abrirlo o
+#   bajarlo, y quien decide es quien lo recibe.
+#
+#   {
+#     "avisos": [
+#       {
+#         "id": "0.0.8",
+#         "fecha": "2026-08-22",
+#         "titulo": "Ha salido EspaKodi 0.0.8",
+#         "texto": ["Arreglado el sonido al arrancar.",
+#                   "Añadido el buscador de EspaTV."],
+#         "version": "0.0.8",
+#         "web": "https://espakodi.github.io/apk/",
+#         "paquete": {"arm64": "https://…/EspaKodi-0.0.8-arm64-v8a.apk",
+#                     "sha256_arm64": "las 64 letras del sha256 de ese archivo",
+#                     "armv7": "https://…/EspaKodi-0.0.8-armeabi-v7a.apk",
+#                     "sha256_armv7": "las 64 letras del sha256 de ese otro"}
+#       }
+#     ]
+#   }
+#
+#   El primero de la lista es el más nuevo. Obligatorios solo "id" y "titulo".
+#   "texto" admite una línea suelta o una lista de líneas. "fecha" se escribe
+#   como en el ejemplo y solo sirve para verla. "version" evita avisar de una
+#   versión a quien ya la tiene puesta.
+#
+#   "web" y "paquete" son opcionales, y son lo que el aviso ofrece hacer además
+#   de enseñar el texto. Con "web" sale un botón que abre esa página. "paquete"
+#   es para repartir un APK, normalmente una versión nueva de EspaKodi; sale un
+#   botón que lo descarga a Descargas y ahí se acaba, porque EspaKodi no instala
+#   nada, y el propio diálogo dice que hay que abrirlo desde el gestor de
+#   archivos. Las plataformas se llaman arm64, armv7 y windows, y cada aparato
+#   coge la suya; si no está la suya, no le ofrece descargar nada.
+#   Las dos solo https, y cada plataforma de "paquete" necesita su "sha256_…",
+#   que es lo único con lo que EspaKodi puede comprobar que lo que baja es lo
+#   que tú subiste; una descarga sin él no se ofrece (el aviso se sigue viendo).
+#   En ninguna dirección puede haber una barra vertical, porque Kodi trata lo
+#   que va detrás como opciones de la conexión y una de ellas apaga la
+#   comprobación del certificado. Una dirección con "|" se rechaza entera.
+#
+#   Caben 50 avisos y 512 KB. El título se corta a 80 letras y el texto a 4000.
+#   Quien vuelve al cabo de un año no se pierde ninguno. Los avisos no caducan
+#   ni se marcan solos por el tiempo que pase; al arrancar le sale una sola
+#   notificación ("23 avisos nuevos", o el título si solo hay uno), la fila
+#   Avisos de Ajustes le dice cuántos lleva sin leer, y dentro están todos con
+#   su fecha y un punto delante los que aún no ha abierto. Se guardan los 50
+#   últimos, así que del 51 para atrás se van cayendo los más viejos.
+#   Aun así, quita del archivo los avisos que ya den igual, porque lo que dejes
+#   ahí le llegará también a quien instale EspaKodi mañana.
+
+[info]
+# Quítale la almohadilla (#) a la de abajo y ponle el nombre que quieras.
+# nombre = Como quieras llamarla
+
+[repos]
+# Quítale la almohadilla (#) a la de abajo y pon el tuyo. Va uno por línea.
+# repository.loquesea = https://ejemplo.com/repository.loquesea-1.0.0.zip
+
+[addons]
+# Quítale la almohadilla (#) a la de abajo y pon el tuyo. Va uno por línea.
+# plugin.video.loquesea
+
+[favoritos]
+# Quítale la almohadilla (#) a la de abajo y pon el tuyo. Va uno por línea.
+# Buscar en EspaTV = plugin://plugin.video.espatv/busqueda
+
+[video]
+# Quítale la almohadilla (#) a la de abajo. Vale bajo, normal, alto o maximo.
+# cache = alto
+
+[ajustes]
+# Quítale la almohadilla (#) a la de abajo, y añade las que quieras de arriba.
+# paleta = laroja
+
+[avisos]
+# Quítale la almohadilla (#) a la de abajo y pon tu sitio de avisos.
+# url = https://ejemplo.com/avisos.json
