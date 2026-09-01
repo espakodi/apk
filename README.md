@@ -1,8 +1,8 @@
 Repositorio oficial para descargar los APK de el proyecto.
 
-V0.0.5 "Venom":
-- arm64 SHA-256: c7c2bec01813d2c9b119f9871514a65aee52796da25eb0f43749e0cff149b8fb
-- arm32 SHA-256: d98cd93d292a86851319b5a0878e65f1080311345711c26a3943e188fc9c534d
+V0.1.0 "Venom":
+- arm64 SHA-256: a0cab1f7d74d40476688b392f3ebc5ddd99b74790be1e6fe804853f3156e3f19
+- arm32 SHA-256: 
 
 # Changelog - EspaKodi
 - Kodi oficial tiene un fallo al salir. El proceso no llega a cerrarse y al volver a entrar te encuentras la pantalla en negro. Aquí el botón de apagar fuerza el cierre y sale al instante.
