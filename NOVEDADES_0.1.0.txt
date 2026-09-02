@@ -1,0 +1,334 @@
+  ESPAKODI VENOM 0.1.0
+  Todo lo que cambia desde la 0.0.5
+====================================================================
+
+1. ANTES DE NADA: CÓMO SE ACTUALIZA
+--------------------------------------------------------------------
+
+Se instala encima de la 0.0.5 sin desinstalar nada. No pierdes tus
+favoritos, ni los addons que te hayas instalado, ni tus ajustes.
+
+Hay dos archivos y cada aparato usa el suyo:
+
+  - 64 bits: móviles y tabletas.
+  - 32 bits: Fire TV Stick, TV box y cajas de Android TV.
+
+El de 64 bits no entra en un Fire Stick y el de 32 no entra en un móvil
+moderno. Si te dice "no compatible", es que has cogido el otro.
+
+La primera vez que abras la versión nueva tarda un poco más, porque está
+instalando los addons y los favoritos que no tenías. Déjala terminar.
+
+La aplicación pasa a llamarse EspaKodi Venom.
+
+
+2. EL MENÚ DE AJUSTES DE ESPAKODI
+--------------------------------------------------------------------
+
+Tienes un favorito nuevo, "Ajustes EspaKodi", que reúne en un solo sitio
+todo lo que antes había que ir buscando por los menús de Kodi, más un
+montón de cosas que antes no existían.
+
+En el móvil salen 19 filas y en la tele 18 (allí se oculta la que
+configura la barra táctil, que en TV no hay).
+
+Lo que encontrarás dentro, por bloques:
+
+  Lo básico
+    Ajustes básicos: atajos directos a la pantalla, el idioma, los
+    addons y los orígenes desconocidos de Kodi, sin perderte por los
+    submenús. Y "Más opciones" al final, que abre los ajustes de Kodi
+    completos.
+
+  Internet
+    Cambiar el DNS, con guía incluida, y Comprobar la conexión.
+    (Ver el punto 3.)
+
+  Cómo se ve
+    Colores, EspaKodi La Roja, foto de fondo, opacidad, modo warp y
+    animaciones.
+
+  Cómo se maneja
+    Modo táctil, gesto de dos dedos, cruceta o botón de sonido, y
+    continuar donde estabas.
+
+  Sonido
+    Sonido al arrancar y sonido al navegar.
+
+  Otras
+    Icono de la aplicación, compartir configuración, avisos,
+    almacenamiento y ajustes avanzados.
+
+Cada fila lleva su explicación. Si pones la vista de lista, debajo del
+nombre te cuenta para qué sirve y qué pasa si la tocas.
+
+
+3. CAMBIAR EL DNS: LOS DÍAS DE PARTIDO
+--------------------------------------------------------------------
+
+Si te quedas sin medio internet cuando hay fútbol, esto es para ti.
+EspaKodi trae ahora su propio DNS cifrado, dentro de la aplicación, con
+un interruptor.
+
+  - Se enciende desde Ajustes EspaKodi > Cambiar el DNS. Android te pide
+    permiso una vez y ya está.
+  - Puedes elegir entre XDP (con filtro de publicidad o sin él),
+    Cloudflare, Google y AdGuard, o escribir el tuyo.
+  - Con el servidor que filtra, la publicidad de las páginas y de muchos
+    addons deja de cargar.
+  - Se apaga con el mismo interruptor y todo vuelve a como estaba.
+
+Además hay una guía de 16 páginas dentro de la app (qué es el DNS, por
+qué se cae internet los días de partido, y el paso a paso para ponerlo
+a mano en el móvil, en la tele, en el Fire TV, en el router y en el
+navegador), pensada para leerla con el dedo. Se pasa página tocando los
+laterales, no con una flechita minúscula.
+
+Y una pantalla nueva, "Comprobar la conexión", que te dice si tienes
+internet, si tu servidor responde, quién te está resolviendo los nombres
+y si la publicidad se está bloqueando. Cuando algo falla, lo primero que
+sale es qué hacer para arreglarlo.
+
+Probado en Android 11, en Android 16 y en un Fire TV Stick.
+
+
+4. CÓMO SE VE
+--------------------------------------------------------------------
+
+  Colores. Tres paletas a elegir: la gris de EspaKodi, "La Roja" (rojo
+  y oro) y el azul de siempre.
+
+  EspaKodi La Roja. Un botón que lo pone todo de golpe: la paleta roja,
+  el fondo de campeones, el balón girando en la pantalla de espera y los
+  sonidos. Se apaga igual de fácil.
+
+  Foto de fondo. Puedes poner una foto tuya de fondo y regular cuánto
+  tapa. Ya no se pisa con las imágenes de los addons.
+
+  Modo warp. Quita las transiciones para que los menús entren al
+  momento. Viene encendido; si prefieres las animaciones, apágalo.
+
+  Animaciones. Con el modo warp apagado puedes elegir entre completas o
+  solo fundido.
+
+  Y cosas que estaban mal y ya no: el fanart de los addons no se veía
+  nunca (era transparente del todo), el foco casi no se distinguía del
+  fondo, y el fondo salía descolorido con las paletas nuevas.
+
+
+5. SONIDOS
+--------------------------------------------------------------------
+
+  Al arrancar. Tres canciones, o modo rotativo (una distinta cada vez
+  que abres la app), o ninguna. Viene apagado de fábrica; al elegir una
+  suena para que decidas de oído.
+
+  Al navegar. Pelota o tambor, o ninguno.
+
+  Los tuyos. Puedes añadir tus propias canciones de arranque y tu propio
+  sonido de navegación. Tienen que ser WAV; la app te explica el formato
+  antes de abrir el explorador y, si el archivo no vale, te dice
+  exactamente por qué (que dura demasiado, que es un MP3 disfrazado...).
+  El explorador se abre ya en la carpeta de Descargas.
+
+  Suenan a tiempo. Los sonidos tenían hasta una décima de silencio al
+  principio y parecía que iban con retraso. Recortado.
+
+
+6. MANEJO CON EL DEDO Y CON EL MANDO
+--------------------------------------------------------------------
+
+  La cruceta en pantalla funciona de verdad. Antes solo iba cómoda en
+  la vista de cuadrícula; ahora navega bien en todas.
+
+  Cruceta o botón de sonido. En la barra de abajo puedes elegir entre la
+  cruceta o un botón para subir y bajar el volumen. Antes había que
+  quedarse con la cruceta a la fuerza.
+
+  La flecha de Atrás aparece y desaparece en el acto al encender o
+  apagar el modo táctil, sin tener que salir y volver a entrar.
+
+  La cruceta ya no se queda muerta. Al tocar la flecha de Atrás o las
+  migas de pan con el dedo, el mando dejaba de responder hasta volver a
+  tocar la pantalla. Arreglado.
+
+  Gesto de dos dedos. Deslizando dos dedos hacia arriba se manda la
+  acción "izquierda", que es lo que abre los filtros y los menús
+  laterales de los addons que tienen pantalla propia y donde los
+  controles táctiles de EspaKodi no salen. Viene apagado.
+
+  La barra de reproducción se quita sola a los 20 segundos. Antes se
+  quedaba fija encima del vídeo hasta que la quitabas a mano.
+
+  El botón de salir cierra la aplicación. Y ahora también el "Salir" de
+  dentro del menú de apagado, que se llegaba con la tecla del mando y
+  dejaba la aplicación colgada, con la pantalla en negro al reabrirla.
+
+
+7. CONTINUAR DONDE ESTABAS
+--------------------------------------------------------------------
+
+Al abrir la aplicación vuelve a la lista en la que estabas, en la misma
+fila. Viene apagado de fábrica; se enciende desde Ajustes.
+
+Y si cierras con el botón de la app mientras ves algo, ahora sí queda
+guardado el minuto por el que ibas.
+
+
+8. COMPARTIR TU CONFIGURACIÓN CON UN ARCHIVO DE TEXTO
+--------------------------------------------------------------------
+
+Esto es nuevo entero. En vez de repartir un APK de 100 MB para que
+alguien tenga tus addons, se reparte un archivo de texto de veinte
+líneas.
+
+  - Ajustes EspaKodi > Compartir configuración > Exportar la mía. Te
+    genera un .txt con tus addons, sus repositorios, tus favoritos, la
+    caché de vídeo y, si quieres, también los colores y los sonidos.
+  - Quien lo reciba solo tiene que dejarlo en Descargas. Al abrir
+    EspaKodi le sale un aviso preguntando si lo aplica, diciéndole qué
+    va a instalar y de qué páginas se va a descargar. Puede decir que
+    no, y no se toca nada.
+  - También se puede importar desde una dirección de internet, sin
+    necesitar permisos de archivos (útil en Fire TV).
+  - Y hay una plantilla en blanco, con las explicaciones dentro, para
+    quien quiera escribir la suya a mano.
+
+Un archivo de estos solo AÑADE. No desinstala nada, no
+borra favoritos, no puede tocar los addons que trae EspaKodi de serie y
+no puede cambiar ajustes de Kodi que no sean la caché de vídeo. Los
+enlaces solo pueden ser https, y los archivos que trae se comprueban
+antes de abrirlos.
+
+
+9. TABLÓN DE AVISOS
+--------------------------------------------------------------------
+
+La app puede mirar una vez al día si hay avisos y sacarte una
+notificación corta. Sirve para enterarte de que hay versión nueva o de
+que algo ha dejado de funcionar, sin que nadie tenga que ir contándolo
+por el grupo uno a uno.
+
+No instala nada por su cuenta. Como mucho, un aviso puede ofrecerte
+descargar un archivo a Descargas, y lo instalas tú si quieres.
+
+Se ve en Ajustes EspaKodi > Avisos, con el contador de los que no has
+leído. La dirección de los avisos la pone quien reparte la
+configuración, y se puede quitar.
+
+
+10. ALMACENAMIENTO: LIMPIEZA DE DISCO
+--------------------------------------------------------------------
+
+Kodi va dejando basura. Cada vez que un addon se actualiza guarda una
+copia del instalador y nunca la borra, y en un aparato con tiempo eso
+son cientos de megas.
+
+  - Ajustes EspaKodi > Almacenamiento > Limpiar ahora, que te dice
+    cuántos MB puedes recuperar de verdad (no lo que ocupa la carpeta).
+  - Limpieza automática, que lo hace sola cada pocos días. Puedes
+    apagarla, y puedes pedir que te avise cuando termine.
+  - Carátulas sin usar: borra las imágenes que llevan meses sin verse.
+    Kodi las vuelve a descargar cuando hacen falta.
+
+Nunca borra mientras estás viendo algo, ni mientras se instala algo, ni
+toca los datos de tus addons.
+
+
+11. AJUSTES AVANZADOS
+--------------------------------------------------------------------
+
+Para quien quiera afinar Kodi a fondo. Un apartado con los 200 ajustes
+del archivo advancedsettings.xml, repartidos en 16 grupos, cada uno con
+su nombre en español, el valor que tienes, el de fábrica y una
+explicación de qué hace.
+
+Trae además cinco plantillas listas (aguantar enlaces lentos, activar
+el registro de depuración...) para no tener que tocar nada a mano.
+
+Se puede volver atrás en cualquier momento. Antes de escribir hace copia
+de tu archivo, si ya tenías uno.
+
+
+12. ICONO DE LA APLICACIÓN
+--------------------------------------------------------------------
+
+Puedes cambiar el icono de EspaKodi en el escritorio del móvil entre
+EspaKodi, EspaKodi Warp y EspaKodi La Roja. También puedes anclar un
+acceso directo con una foto tuya.
+
+En Xiaomi/MIUI el icono ya no sale con el plato blanco detrás.
+
+
+13. ADDONS
+--------------------------------------------------------------------
+
+Nuevos, con su favorito:
+
+  - Gamesek y EKGames: juegos.
+  - EKHorus: AceStream, P2P y enlaces magnet. Antes iba dentro sin
+    verse, ahora tiene su sitio propio.
+  - Ajustes EspaKodi: el menú del punto 2.
+
+Actualizados: EspaTV 2.9.0, Panel de control (loiolink) 0.4.1,
+resolveurl 5.1.207, EspaKodi Instaladores 1.1.0 y la Guía 1.0.6.
+
+Los addons ya se actualizan solos. Hasta ahora se quedaban clavados en
+la versión con la que venían dentro de la app, por un fallo en cómo
+quedaban registrados. Ahora Kodi los actualiza desde sus repositorios
+a partir del día siguiente a instalar.
+
+Otras mejoras de addons:
+
+  - EspaTV sale con las etiquetas en negrita, que se leen mucho mejor en
+    la tele.
+  - Instaladores: menú ordenado por bloques, y Elementum por fin se
+    instala. Antes fallaba siempre porque su repositorio no llegaba a
+    tiempo; ahora se baja directo y tarda diez segundos.
+  - Se pueden instalar archivos APK desde dentro de Kodi también en el
+    móvil, no solo en la tele (hay que darle el permiso en Android).
+  - Los subtítulos, el teclado con sugerencias y la información de
+    películas vienen ya configurados en español.
+
+
+14. FALLOS CORREGIDOS QUE SE NOTABAN
+--------------------------------------------------------------------
+
+  - El reloj salía en formato de 12 horas y la fecha en un formato raro.
+    La región de España no se estaba aplicando bien.
+  - Las sugerencias del teclado salían en inglés.
+  - Al actualizar se podían perder favoritos si el archivo de favoritos
+    tenía algún carácter raro. Ya no.
+  - El favorito "Panel de control" salía sin icono.
+  - Lo que cambiabas desde los ajustes de EspaKodi se perdía al cerrar
+    la aplicación con su botón. Ahora se guarda al momento.
+  - Apagar el sonido al navegar apagaba también el de arranque.
+  - Al tocar "Colores" la aplicación entraba en un bucle de cambios de
+    color y había que forzar el cierre.
+  - La fila "Modo warp" decía "Desactivado" aunque estuviera encendido,
+    y a veces la lista de Ajustes se quedaba con un solo elemento.
+  - Salía una rueda de carga cada vez que entrabas en Ajustes y cada vez
+    que cambiabas algo.
+  - "Continuar donde estabas" abría la lista una fila más arriba cada
+    vez, y el error se iba acumulando.
+  - Textos con los acentos rotos, que se veían con caracteres extraños
+    en medio: la pantalla de arranque, el aviso legal y el nombre del
+    favorito de la Guía.
+  - En la pantalla de arranque, en móviles alargados, el aviso legal de
+    abajo salía cortado.
+
+
+15. NOTAS
+--------------------------------------------------------------------
+
+  - Todo lo anterior está probado en aparatos de verdad: un móvil con
+    Android 11, uno con Android 16 y un Fire TV Stick 4K Max.
+  - Las opciones nuevas que cambian cómo se comporta la app vienen
+    APAGADAS: sonido de arranque, continuar donde estabas, gesto de dos
+    dedos y el DNS. Si no tocas nada, la app se comporta como antes,
+    solo que más rápida y con el menú de ajustes disponible.
+  - Vienen encendidos de fábrica el modo warp, el cierre automático de
+    la barra de reproducción y la limpieza de disco automática (esta
+    última sin avisar cuando termina; el aviso se enciende aparte).
+  - EspaKodi no tiene relación con la Fundación XBMC ni con el proyecto
+    Kodi oficial.
