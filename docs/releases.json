@@ -34,14 +34,14 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2026-09-01T23:22:51Z",
-    "updated_at": "2026-09-01T23:46:32Z",
+    "updated_at": "2026-09-02T09:18:51Z",
     "published_at": "2026-09-01T23:46:32Z",
     "assets": [
       {
         "url": "https://api.github.com/repos/espakodi/apk/releases/assets/540308786",
         "id": 540308786,
         "node_id": "RA_kwDOS8FkbM4gNHUy",
-        "name": "EspaKodi-Venom-0.1.0_64bits.apk",
+        "name": "EspaKodi-Venom-0.1.0_64bits_test.apk",
         "label": null,
         "uploader": {
           "login": "espakodi",
@@ -70,8 +70,8 @@
         "digest": "sha256:a0cab1f7d74d40476688b392f3ebc5ddd99b74790be1e6fe804853f3156e3f19",
         "download_count": 0,
         "created_at": "2026-09-01T23:45:57Z",
-        "updated_at": "2026-09-01T23:46:03Z",
-        "browser_download_url": "https://github.com/espakodi/apk/releases/download/v0.1.0/EspaKodi-Venom-0.1.0_64bits.apk"
+        "updated_at": "2026-09-02T09:18:51Z",
+        "browser_download_url": "https://github.com/espakodi/apk/releases/download/v0.1.0/EspaKodi-Venom-0.1.0_64bits_test.apk"
       }
     ],
     "tarball_url": "https://api.github.com/repos/espakodi/apk/tarball/v0.1.0",
