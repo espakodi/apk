@@ -68,7 +68,7 @@
         "state": "uploaded",
         "size": 101658096,
         "digest": "sha256:9f9666c694b5ac88c2e68056e813e5e8659f60e2e47f2ba7cfe3d25aab481d52",
-        "download_count": 0,
+        "download_count": 2,
         "created_at": "2026-09-08T08:16:21Z",
         "updated_at": "2026-09-08T08:17:08Z",
         "browser_download_url": "https://github.com/espakodi/apk/releases/download/v0.1.2/EspaKodi-0.1.2-arm64-v8a.apk"
@@ -104,7 +104,7 @@
         "state": "uploaded",
         "size": 101104892,
         "digest": "sha256:a27beae6199fd15082689a91aea8c53ac45d2606e24d80b387732e7d505f0912",
-        "download_count": 0,
+        "download_count": 3,
         "created_at": "2026-09-08T08:16:30Z",
         "updated_at": "2026-09-08T08:17:09Z",
         "browser_download_url": "https://github.com/espakodi/apk/releases/download/v0.1.2/EspaKodi-0.1.2-armeabi-v7a.apk"
@@ -183,7 +183,7 @@
         "state": "uploaded",
         "size": 93144828,
         "digest": "sha256:c7c2bec01813d2c9b119f9871514a65aee52796da25eb0f43749e0cff149b8fb",
-        "download_count": 130,
+        "download_count": 131,
         "created_at": "2026-06-27T17:04:05Z",
         "updated_at": "2026-06-27T17:04:11Z",
         "browser_download_url": "https://github.com/espakodi/apk/releases/download/v0.0.5/EspaKodi-0.0.5-arm64-v8a.apk"
@@ -219,7 +219,7 @@
         "state": "uploaded",
         "size": 92780372,
         "digest": "sha256:a4ce87fcf26134e8a0987ed5ab5389ccdb7a5d4a5acab5cfcfc7506ebdce925d",
-        "download_count": 90,
+        "download_count": 91,
         "created_at": "2026-06-28T17:18:03Z",
         "updated_at": "2026-06-28T17:18:09Z",
         "browser_download_url": "https://github.com/espakodi/apk/releases/download/v0.0.5/EspaKodi-0.0.5-armeabi-v7a.apk"
