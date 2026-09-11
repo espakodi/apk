@@ -292,6 +292,7 @@ a { color: var(--primary-strong); }
 .rel-notes h3, .rel-notes h4 { margin: 14px 0 8px; font-size: 1rem; }
 .rel-notes p { margin: 0 0 10px; }
 .rel-notes a { word-break: break-word; }
+.rel-notes img { display: block; max-width: 100%; height: auto; margin: 10px 0; border-radius: 8px; }
 
 .rel-assets { display: flex; flex-direction: column; gap: 16px; border-top: 1px solid var(--border); padding-top: 18px; }
 .rel-asset { display: flex; flex-direction: column; gap: 10px; }
