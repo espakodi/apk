@@ -295,21 +295,26 @@ a { color: var(--primary-strong); }
 .rel-notes h4 { margin: 28px 0 4px; font-size: 1.1rem; text-align: center; }
 
 /* Hueco amplio por arriba para despegar la captura del párrafo anterior, salvo cuando
-   viene justo detrás de su encabezado, que entonces va pegada a él. */
-.rel-shot { display: block; position: relative; width: 100%; max-width: 380px; margin: 24px auto 10px; }
+   viene justo detrás de su encabezado, que entonces va pegada a él. aspect-ratio en vez
+   de altura fija para que la caja encoja con la columna en móvil. */
+.rel-shot { display: block; width: 100%; max-width: 760px; aspect-ratio: 2 / 1; margin: 24px auto 10px; background: var(--surface-2); border-radius: 8px; }
 .rel-notes h3 + p .rel-shot, .rel-notes h4 + p .rel-shot { margin-top: 4px; }
 
 /* Caja fija: las capturas vienen con recortes de alturas muy distintas y sin esto
    cada una entra con un tamaño. contain evita cortar texto de los menús. */
-.rel-notes img { display: block; width: 100%; height: 190px; object-fit: contain; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; }
+.rel-notes img { display: block; width: 100%; height: 100%; object-fit: contain; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; }
 
-/* Solo con ratón: en táctil el hover se queda pegado tras el toque y taparía el texto. */
+/* Solo con ratón: en táctil el hover se queda pegado tras el toque y taparía el texto.
+   El aumento va en position fixed porque la tarjeta de versión recorta con overflow hidden
+   y un scale se quedaría cortado; pointer-events none evita que la imagen ampliada se robe
+   el hover a sí misma y entre en un parpadeo. */
 @media (hover: hover) {
-  .rel-shot { cursor: zoom-in; transition: transform .18s ease, box-shadow .18s ease; }
-  .rel-shot:hover { transform: scale(1.8); z-index: 5; box-shadow: var(--shadow-lg); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .rel-shot { transition: none; }
+  .rel-shot { cursor: zoom-in; }
+  .rel-shot:hover img {
+    position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: auto; height: 92vh; max-width: 94vw;
+    z-index: 60; pointer-events: none; box-shadow: var(--shadow-lg);
+  }
 }
 
 .rel-notes-box { margin-top: 18px; border-top: 1px solid var(--border); }
