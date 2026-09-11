@@ -424,7 +424,7 @@ function escapeHtml(str) {
 }
 
 // Render mínimo de las notas de release: encabezados, viñetas, párrafos,
-// negrita y enlaces. El texto se escapa antes para evitar inyección.
+// negrita, imágenes y enlaces. El texto se escapa antes para evitar inyección.
 function renderMarkdown(md) {
   const lines = md.replace(/\r\n/g, '\n').split('\n');
   const out = [];
@@ -432,6 +432,8 @@ function renderMarkdown(md) {
 
   const inline = (text) => escapeHtml(text)
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    // Antes que los enlaces: si no, el patrón de enlace se come el [alt](url) y deja el ! suelto.
+    .replace(/!\[([^\]]*)\]\((https?:\/\/[^\s)]+)\)/g, '<img src="$2" alt="$1" loading="lazy">')
     .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
 
   const closeList = () => { if (inList) { out.push('</ul>'); inList = false; } };
