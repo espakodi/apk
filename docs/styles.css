@@ -292,7 +292,31 @@ a { color: var(--primary-strong); }
 .rel-notes h3, .rel-notes h4 { margin: 14px 0 8px; font-size: 1rem; }
 .rel-notes p { margin: 0 0 10px; }
 .rel-notes a { word-break: break-word; }
-.rel-notes img { display: block; max-width: 100%; height: auto; margin: 10px 0; border-radius: 8px; }
+.rel-notes h4 { margin: 28px 0 4px; font-size: 1.1rem; text-align: center; }
+
+/* Hueco amplio por arriba para despegar la captura del párrafo anterior, salvo cuando
+   viene justo detrás de su encabezado, que entonces va pegada a él. */
+.rel-shot { display: block; position: relative; width: 100%; max-width: 380px; margin: 24px auto 10px; }
+.rel-notes h3 + p .rel-shot, .rel-notes h4 + p .rel-shot { margin-top: 4px; }
+
+/* Caja fija: las capturas vienen con recortes de alturas muy distintas y sin esto
+   cada una entra con un tamaño. contain evita cortar texto de los menús. */
+.rel-notes img { display: block; width: 100%; height: 190px; object-fit: contain; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; }
+
+/* Solo con ratón: en táctil el hover se queda pegado tras el toque y taparía el texto. */
+@media (hover: hover) {
+  .rel-shot { cursor: zoom-in; transition: transform .18s ease, box-shadow .18s ease; }
+  .rel-shot:hover { transform: scale(1.8); z-index: 5; box-shadow: var(--shadow-lg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rel-shot { transition: none; }
+}
+
+.rel-notes-box { margin-top: 18px; border-top: 1px solid var(--border); }
+.rel-notes-box > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 10px; padding: 14px 0 12px; font-weight: 600; color: var(--text-soft); }
+.rel-notes-box > summary::-webkit-details-marker { display: none; }
+.rel-notes-box > summary::after { content: ""; margin-left: auto; width: 8px; height: 8px; border-right: 2px solid var(--text-mute); border-bottom: 2px solid var(--text-mute); transform: rotate(-45deg); transition: transform .15s ease; }
+.rel-notes-box[open] > summary::after { transform: rotate(45deg); }
 
 .rel-assets { display: flex; flex-direction: column; gap: 16px; border-top: 1px solid var(--border); padding-top: 18px; }
 .rel-asset { display: flex; flex-direction: column; gap: 10px; }
