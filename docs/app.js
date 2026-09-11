@@ -306,9 +306,24 @@ function renderHistory(releases) {
         <span class="rel-date">${formatDate(release.published_at)}</span>
       </summary>
       <div class="rel-body">
-        <div class="rel-notes">${renderMarkdown(release.body || '')}</div>
         <div class="rel-assets">${apks.map(assetRow).join('')}</div>
+        ${release.body ? `<details class="rel-notes-box">
+          <summary>Novedades de ${escapeHtml(release.tag_name)}</summary>
+          <div class="rel-notes"></div>
+        </details>` : ''}
       </div>`;
+
+    // Las notas se pintan al abrir, no al cargar la página: así las capturas no se
+    // piden hasta que alguien las quiere ver.
+    const notes = details.querySelector('.rel-notes-box');
+    if (notes) {
+      notes.addEventListener('toggle', () => {
+        if (!notes.open || notes.dataset.rendered) return;
+        notes.dataset.rendered = '1';
+        notes.querySelector('.rel-notes').innerHTML = renderMarkdown(release.body);
+      });
+    }
+
     list.appendChild(details);
   });
 }
@@ -433,7 +448,7 @@ function renderMarkdown(md) {
   const inline = (text) => escapeHtml(text)
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     // Antes que los enlaces: si no, el patrón de enlace se come el [alt](url) y deja el ! suelto.
-    .replace(/!\[([^\]]*)\]\((https?:\/\/[^\s)]+)\)/g, '<img src="$2" alt="$1" loading="lazy">')
+    .replace(/!\[([^\]]*)\]\((https?:\/\/[^\s)]+)\)/g, '<a class="rel-shot" href="$2" target="_blank" rel="noopener"><img src="$2" alt="$1" loading="lazy"></a>')
     .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
 
   const closeList = () => { if (inList) { out.push('</ul>'); inList = false; } };
@@ -441,6 +456,9 @@ function renderMarkdown(md) {
   for (const raw of lines) {
     const line = raw.trim();
     if (!line) { closeList(); continue; }
+
+    // Separadores: se descartan. Sin esto salían como un "---" literal en el texto.
+    if (/^(-{3,}|_{3,}|\*{3,})$/.test(line)) { closeList(); continue; }
 
     const heading = line.match(/^(#{1,6})\s+(.*)$/);
     if (heading) {
