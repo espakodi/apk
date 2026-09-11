@@ -34,7 +34,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2026-09-07T11:08:17Z",
-    "updated_at": "2026-09-11T03:04:41Z",
+    "updated_at": "2026-09-11T03:23:09Z",
     "published_at": "2026-09-08T08:17:15Z",
     "assets": [
       {
@@ -112,7 +112,7 @@
     ],
     "tarball_url": "https://api.github.com/repos/espakodi/apk/tarball/v0.1.2",
     "zipball_url": "https://api.github.com/repos/espakodi/apk/zipball/v0.1.2",
-    "body": "\r\n"
+    "body": "# Un breve vistazo a los nuevos ajustes de EspaKodi 0.1.2\r\n\r\nInnovación • Personalización extrema • Optimización • Antibloqueo\r\n\r\n![Favoritos de EspaKodi con el acceso a Ajustes](https://raw.githubusercontent.com/espakodi/apk/main/docs/img/01-favoritos-ajustes.jpg)\r\n\r\n## Menú principal de los ajustes\r\n\r\n![Menú principal de los ajustes de EspaKodi](https://raw.githubusercontent.com/espakodi/apk/main/docs/img/02-menu-principal-1.jpg)\r\n\r\n![Menú principal, continuación](https://raw.githubusercontent.com/espakodi/apk/main/docs/img/03-menu-principal-2.jpg)\r\n\r\n![Menú principal, final](https://raw.githubusercontent.com/espakodi/apk/main/docs/img/04-menu-principal-3.jpg)\r\n\r\n## Antibloqueo de conexión\r\n\r\n![Ajustes de antibloqueo y DNS](https://raw.githubusercontent.com/espakodi/apk/main/docs/img/05-antibloqueo-conexion.jpg)\r\n\r\n## Tests de conexión (Página 1)\r\n\r\n![Comprobar la conexión, página 1 de 4](https://raw.githubusercontent.com/espakodi/apk/main/docs/img/06-test-conexion-pagina-1.jpg)\r\n\r\n## Opciones de accesibilidad\r\n\r\n![Opciones de accesibilidad](https://raw.githubusercontent.com/espakodi/apk/main/docs/img/07-accesibilidad.jpg)\r\n\r\n## Ajustes básicos\r\n\r\n![Ajustes básicos](https://raw.githubusercontent.com/espakodi/apk/main/docs/img/08-ajustes-basicos.jpg)\r\n\r\n## Gestión de memoria\r\n\r\n![Limpieza y espacio](https://raw.githubusercontent.com/espakodi/apk/main/docs/img/09-gestion-memoria-1.jpg)\r\n\r\n![Memoria del aparato y caché](https://raw.githubusercontent.com/espakodi/apk/main/docs/img/10-gestion-memoria-2.jpg)\r\n\r\n## Optimización\r\n\r\n![Plantillas de optimización y ajustes de reproducción](https://raw.githubusercontent.com/espakodi/apk/main/docs/img/11-optimizacion.jpg)\r\n\r\n## Ajustes avanzados\r\n\r\n![Ajustes avanzados](https://raw.githubusercontent.com/espakodi/apk/main/docs/img/12-ajustes-avanzados.jpg)\r\n\r\n## Panel de control\r\n\r\nVer todo lo que puede hacer\r\n\r\n![Panel de control](https://raw.githubusercontent.com/espakodi/apk/main/docs/img/13-panel-de-control.jpg)\r\n\r\n---\r\n\r\nPublicado en [t.me/espakodi/511](https://t.me/espakodi/511) el 9 de septiembre de 2026 a las 13:00 UTC.\r\n"
   },
   {
     "url": "https://api.github.com/repos/espakodi/apk/releases/345741870",
