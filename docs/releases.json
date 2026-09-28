@@ -34,7 +34,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2026-09-27T11:05:29Z",
-    "updated_at": "2026-09-28T08:27:55Z",
+    "updated_at": "2026-09-28T08:29:19Z",
     "published_at": "2026-09-28T08:03:31Z",
     "assets": [
       {
@@ -112,7 +112,7 @@
     ],
     "tarball_url": "https://api.github.com/repos/espakodi/apk/tarball/v0.1.3",
     "zipball_url": "https://api.github.com/repos/espakodi/apk/zipball/v0.1.3",
-    "body": "Novedades en EspaKodi 0.1.3:\r\n\r\nDesaparecen las franjas azules arriba y abajo al reproducir películas en formato cine y el parpadeo azul al detener la reproducción. La pantalla de arranque vuelve a ser completamente negra.\r\n\r\nMenos consumo de memoria y espacio.\r\n\r\nEliminada la detección en la carpeta interna de Telegram (bloqueada por las restricciones de Android)  de la funcionalidad \r\n\"Pasar mi EspaKodi o traer otro\" y corregido el texto explicativo. Hay que guardar el archivo en Descargas, en Descargas/EspaKodi, en la raíz del almacenamiento o en /sdcard/EspaKodi/ para que se detecte automáticamente al arrancar.\r\n"
+    "body": "Novedades en EspaKodi 0.1.3:\r\n--------------------------------\r\n\r\n- Desaparecen las franjas azules arriba y abajo al reproducir películas en formato cine y el parpadeo azul al detener la reproducción. La pantalla de arranque vuelve a ser completamente negra.\r\n\r\n-Menos consumo de memoria y espacio.\r\n\r\n- Eliminada la detección en la carpeta interna de Telegram (bloqueada por las restricciones de Android)  de la funcionalidad \r\n\"Pasar mi EspaKodi o traer otro\" y corregido el texto explicativo. Hay que guardar el archivo en Descargas, en Descargas/EspaKodi, en la raíz del almacenamiento o en /sdcard/EspaKodi/ para que se detecte automáticamente al arrancar.\r\n"
   },
   {
     "url": "https://api.github.com/repos/espakodi/apk/releases/384549037",
